@@ -4,7 +4,7 @@ import styles from "./styles";
 const ContactUs = () => {
     const classes = styles();
     return (
-        <div style={classes.contactUs}>
+        <div style={classes.contactUs} id="contact-us">
             Mecial 
             Leading the Way in Medical
             Execellence, Trusted Care.

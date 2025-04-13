@@ -1,14 +1,19 @@
 import { CSSProperties } from 'react';
+import theme from './constants/colors';
 
 const styles = (): { [key: string]: CSSProperties } => ({
   main: {
     minHeight: '100vh',
     backgroundColor: '#f4f4f4',
-    fontFamily: 'Arial, sans-serif',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     color: '#000000',
+    fontFamily: 'Open Sans',
+  },
+  navbar: {
+    backgroundColor: theme.primaryColor,
+    position: 'sticky',
   },
   title: {
     fontSize: '14px',
@@ -36,7 +41,8 @@ const styles = (): { [key: string]: CSSProperties } => ({
     fontSize: 14,
   },
   topBarTitle: {
-    fontSize: 16,
+    fontSize: 32,
+    fontWeight: 600,
   },
   aboutUs: {
     display: 'flex',
@@ -46,12 +52,33 @@ const styles = (): { [key: string]: CSSProperties } => ({
     color: '#000000',
     padding: 10,
   },
-  aboutUsText: {
+  aboutUsHeading: {
     display: 'flex',
     justifyContent: 'center',
     background: '#ffffff',
+    color: theme.secondaryColor,
+    textAlign: 'center',
+    fontSize: 16,
+    fontWeight: 700,
+  },
+  aboutUsSubHeading: {
+    display: 'flex',
+    justifyContent: 'center',
+    background: '#ffffff',
+    color: theme.primaryColor,
+    textAlign: 'center',
+    fontSize: 24,
+    fontWeight: 700,
+  },
+  aboutUsText: {
+    display: 'flex',
+    justifySelf: 'center',
+    background: '#ffffff',
     color: '#000000',
     textAlign: 'center',
+    fontSize: 16,
+    width: '40%',
+    margin: 'auto',
   },
   services: {
     display: 'flex',
@@ -64,6 +91,15 @@ const styles = (): { [key: string]: CSSProperties } => ({
     background: '#ffffff',
     color: '#000000',
     textAlign: 'center',
+  },
+  servicesSubHeading: {
+    display: 'flex',
+    justifyContent: 'center',
+    background: '#ffffff',
+    color: theme.primaryColor,
+    textAlign: 'center',
+    fontSize: 28,
+    fontWeight: 700,
   },
   doctorsContainer: {
     display: 'flex',
@@ -80,9 +116,28 @@ const styles = (): { [key: string]: CSSProperties } => ({
     alignItems: 'center',
     flexDirection: 'column',
     background: '#1f2b6c',
-    color:'#ffffff',
+    color: '#ffffff',
     padding: 20,
     gap: 10,
+  },
+  doctorName: {
+    display: 'flex',
+    justifyContent: 'center',
+    fontSize: 18,
+    fontWeight: 600,
+    color: theme.primaryColor,
+    marginBottom: 12,
+  },
+  doctorType: {
+    display: 'flex',
+    justifyContent: 'center',
+    fontSize: 18,
+    fontWeight: 700,
+    color: theme.primaryColor,
+  },
+  viewProfileButton: {
+    display: 'flex',
+    color: theme.tertiaryColor,
   }
 });
 
