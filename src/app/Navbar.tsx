@@ -28,7 +28,7 @@ const Navbar = () => {
               Home
             </Button>
             <Button color="inherit" onClick={() => scrollToSection('about-us')}>
-              About Us
+              About
             </Button>
             <Button color="inherit" onClick={() => scrollToSection('services')}>
               Services
